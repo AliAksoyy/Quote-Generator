@@ -3,6 +3,7 @@ let btn = document.querySelector("#new-quote")
 let quote = document.querySelector(".quote")
 let person = document.querySelector(".person")
 
+
 const quotes = [
   {
     quote: `"Be mindful when it comes to your words. A string of some that don't mean much to you, may stick with someone else for a lifetime." `,
@@ -36,6 +37,7 @@ const quotes = [
 
 btn.addEventListener("click",function() {
     let random = Math.trunc(Math.random() * quotes.length) ;
-    console.log(random)
+    document.querySelector(".quote").textContent = quotes[random]["quote"]
+    document.querySelector(".person").textContent = quotes[random]["person"]
 
 })
