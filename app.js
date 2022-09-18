@@ -33,3 +33,9 @@ const quotes = [
     person: `Ali Aksoy`,
   },
 ];
+
+btn.addEventListener("click",function() {
+    let random = Math.trunc(Math.random() * quotes.length) ;
+    console.log(random)
+
+})
